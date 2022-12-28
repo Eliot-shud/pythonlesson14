@@ -13,7 +13,7 @@ def get_film_by_title(title):
 
 
 @app.route("/movie/<int:year_1>/to/<int:year_2>")
-def get_film_by_title(year_1, year_2):
+def get_by_years(year_1, year_2):
     films = get_by_years(year_1, year_2)
     return jsonify(films)
 
